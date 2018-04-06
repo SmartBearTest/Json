@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation isOneWay="false" action="http://www.webserviceX.NET/ConversionRate" name="ConversionRate" bindingOperationName="ConversionRate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="7e750727-224b-4211-9e2e-dfb219e6b6ae" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="7e750727-224b-4211-9e2e-dfb219e6b6aefileName">ConversionRate</con:setting></con:settings><con:call name="Request 1" id="5a0b0104-73df-4af6-9be6-dcb87b83763b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8088/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:ConversionRate>
+         <web:FromCurrency>USD</web:FromCurrency>
+         <web:ToCurrency>EUR</web:ToCurrency>
+      </web:ConversionRate>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/ConversionRate"/><con:wsrmConfig version="1.2"/></con:call></con:operation>

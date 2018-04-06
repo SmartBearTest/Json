@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="ConversionRate" id="28c711d0-39e2-4f4e-9beb-20375f771963" interface="CurrencyConvertorSoap" operation="ConversionRate" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="28c711d0-39e2-4f4e-9beb-20375f771963fileName">ConversionRate</con:setting></con:settings><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchXPath/><con:routeScript/><con:response name="Response 1" id="a586573c-622d-48af-9ef3-7547a9ff9264" httpResponseStatus="200" encoding="UTF-8" dataSource="DataSource 1"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:ConversionRateResponse>
+         <web:ConversionRateResult>${#MockResponse#Rate}</web:ConversionRateResult>
+      </web:ConversionRateResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/ConversionRate"/></con:response></con:mockOperation>
